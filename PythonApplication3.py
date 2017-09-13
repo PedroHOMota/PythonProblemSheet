@@ -1,11 +1,95 @@
 import _datetime
+import random
+
 def ProblemSheetQ1(): #Write a program that prints “Hello, world!” to the screen.
-    print("Answer to Q1:\n")
+    print("Answer to Q1:")
     print("Hello World\n")
 
 def ProblemSheetQ2(): #Write a program that prints the current time and date to the console.
-    print("Answer to Q2:\n")
+    print("Answer to Q2:")
     print(str(_datetime.datetime.today()))
+
+def ProblemSheetQ3(): #Fizzbuzz
+    print("\nAnswe to Q3:")
+    for n in range(1,100):
+        if(n%3==0):
+            if(n%5==0):
+                print("FizzBuzz")
+            else:
+                print("Fizz")
+        elif (n%5==0):
+            print("Buzz")
+        else:
+            print(str(n))
+         
+def ProblemSheetQ4(n):
+    print("\nAnswe to Q3:")
+    factorial=1
+    sum=0
+    for i in range(2,n):
+        factorial*=i
+
+    for i in enumerate(factorial):
+        sum+=i
+
+    print(sum)
+
+def ProblemSheetQ5(): #guessing game
+    guesses=[]
+    n=random.randint(0,100)
+    print("\nAnswe to Q4:")
+    print("Guess the number")
+    
+
+    while (True):
+        guess= int(input("Enter a number:"))
+        if(guesses.__contains__(guess)):
+            print("You have tried this number already")
+            continue
+        elif(n==guess):
+            print("Você acertou!!!! Number of tries "+str(guesses.count))
+            break
+        else:
+            if(guess<n):
+                print("Number too small")
+            elif(guess>n):
+                print("Number big small")
+            guesses.__add__(guess)
+
+def ProblemSheetQ6(numberList):#Write a function that returns the largest and smallest elements in a list.
+    biggest=0
+    smallest=numberList[0]
+
+    for n in numberList:
+        if(smallest<n):
+            smallest=n
+        elif(n>biggest):
+            biggest=n
+
+    return smallest,biggest
+
+def ProblemSheetQ7(palindrome): #Write a function that tests whether a string is a palindrome.
+    if(palindrome==palindrome[::-1]):
+        return True
+    else:
+        return False
+    
+def ProblemSheetQ8(list1,list2): #Write a function that merges two sorted lists into a new sorted list. [1,4,6],[2,3,5] → [1,2,3,4,5,6].
+    list1+=list2
+    list1.sort()
+    return list1
+
+def ProblemSheetQ9(n):
+
+def ProblemSheetQ10(string): #Write a function to reverse a string.
+    reversed=""
+
+    for n in range(len(string)-1,-1,-1):
+        reversed+=string[n]
+
+    return reversed
 
 ProblemSheetQ1()
 ProblemSheetQ2()
+ProblemSheetQ3()
+print(ProblemSheetQ7("ana"))
