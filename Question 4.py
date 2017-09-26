@@ -1,26 +1,6 @@
-import _datetime
-import random
-
-def ProblemSheetQ1(): #Write a program that prints “Hello, world!” to the screen.
-    print("Answer to Q1:")
-    print("Hello World\n")
-
-def ProblemSheetQ2(): #Write a program that prints the current time and date to the console.
-    print("Answer to Q2:")
-    print(str(_datetime.datetime.today()))
-
-def ProblemSheetQ3(): #Fizzbuzz
-    print("\nAnswe to Q3:")
-    for n in range(1,100):
-        if(n%3==0):
-            if(n%5==0):
-                print("FizzBuzz")
-            else:
-                print("Fizz")
-        elif (n%5==0):
-            print("Buzz")
-        else:
-            print(str(n))
+#A program that prints the factorial of a number
+#Author: Pedro Mota
+#Date: 21/09/2017
          
 def ProblemSheetQ4(n):
     print("\nAnswe to Q3:")
