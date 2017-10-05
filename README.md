@@ -13,6 +13,8 @@ You can either import them into another python file and call the
 function or just add a call to the function after the function 
 declaration on its file and run the script
 
+### Questions: 
+
 #### 1. Hello, world!
 
 Write a program that prints “Hello, world!” to the screen.
